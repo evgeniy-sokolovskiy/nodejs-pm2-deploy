@@ -10,7 +10,7 @@ const {
 
 module.exports = {
   apps: [{
-    name: 'app1',
+    name: 'app',
     script: 'dist/app.js',
   }],
   deploy: {
