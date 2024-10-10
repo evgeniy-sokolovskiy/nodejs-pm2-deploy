@@ -11,7 +11,7 @@ const {
 module.exports = {
   apps: [{
     name: 'app',
-    script: './dist/app.js',
+    script: 'dist/app.js',
   }],
   deploy: {
     production: {
@@ -20,7 +20,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPOSITORY,
       path: DEPLOY_PATH,
-      'post-deploy': 'cd frontend && nvm use 16 && npm ci && npm run build',
+      'post-deploy': 'cd frontend && nvm use 16 && npm i && npm run build',
     },
   },
 };
